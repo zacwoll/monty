@@ -52,6 +52,7 @@ extern monty_t monty;
 
 /* op fncs */
 void push_node(char *data);
+void push_node_end(char *data);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 void pop(stack_t **stack, unsigned int line_number);
@@ -72,7 +73,7 @@ void set_queue(stack_t **stack, unsigned int line_number);
 bool is_valid_input(char *str);
 
 /* main work fncs */
-void init_info();
+void init_monty(void);
 void open(int argc, char *filename);
 void read_lines();
 void op_switcher(stack_t **stack, char *opcode);

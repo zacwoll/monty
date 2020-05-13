@@ -28,7 +28,10 @@ void add(stack_t **stack, unsigned int ln)
  * @ln: current line number of monty file
  */
 void nop(stack_t **stack, unsigned int ln)
-{}
+{
+	(void)stack;
+	(void)ln;
+}
 
 /**
  * sub - subtract the top value from the next value of the stack

@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 /**
  * init_monty - initializes monty struct
  */
-init_monty()
+void init_monty(void)
 {
 	monty.file = NULL;
 	monty.line = NULL;
