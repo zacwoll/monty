@@ -1,6 +1,6 @@
 #push and pall ignore everything past opcode (and value for push)
-push 0 Push 0 onto the stack
-push 1 Push 1 onto the stack
+push 0 push 0 onto the stack
+push 1 push 1 onto the stack
 
 push 2
   push 3

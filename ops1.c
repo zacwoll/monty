@@ -11,7 +11,7 @@ void push_node(char *data)
 
 	if (!is_valid_input(data))
 	{
-		dprintf(STDERR_FILENO, "L%d: usage: push integer\n", monty.line_number);
+		dprintf(STDERR_FILENO, "L%u: usage: push integer\n", monty.line_number);
 		free_all();
 		exit(EXIT_FAILURE);
 	}
