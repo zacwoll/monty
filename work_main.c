@@ -33,10 +33,7 @@ void read_lines(void)
 	{
 		opcode = strtok(monty.line, " ");
 		if (*opcode == '#' || *opcode == '\n')
-		{
-			monty.line_number++;
-			continue;
-		}
+		{}
 		else if (strcmp(opcode, "push") == 0)
 		{
 			data = strtok(NULL, " \n");
@@ -89,7 +86,7 @@ void op_switcher(stack_t **stack, char *opcode)
 			return;
 		}
 	}
-	dprintf(STDERR_FILENO, "L%d: ", monty.line_number);
+	dprintf(STDERR_FILENO, "L%u: ", monty.line_number);
 	dprintf(STDERR_FILENO, "unknown instruction %s\n", opcode);
 	exit(EXIT_FAILURE);
 }
