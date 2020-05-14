@@ -71,7 +71,7 @@ void div_op(stack_t **stack, unsigned int ln)
 		exit(EXIT_FAILURE);
 	}
 	a = (*stack)->next;
-	if (a->n == 0)
+	if ((*stack)->n == 0)
 	{
 		dprintf(STDERR_FILENO, "L%d: division by zero\n", ln);
 		free_all();
