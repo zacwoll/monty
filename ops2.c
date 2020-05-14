@@ -66,7 +66,7 @@ void div_op(stack_t **stack, unsigned int ln)
 
 	if (!(*stack) || !(*stack)->next)
 	{
-		dprintf(STDERR_FILENO, "L%d: can't add, stack too short\n", ln);
+		dprintf(STDERR_FILENO, "L%d: can't div, stack too short\n", ln);
 		free_all();
 		exit(EXIT_FAILURE);
 	}
@@ -94,7 +94,7 @@ void mul(stack_t **stack, unsigned int ln)
 
 	if (!(*stack) || !(*stack)->next)
 	{
-		dprintf(STDERR_FILENO, "L%d: can't add, stack too short\n", ln);
+		dprintf(STDERR_FILENO, "L%d: can't mul, stack too short\n", ln);
 		free_all();
 		exit(EXIT_FAILURE);
 	}
