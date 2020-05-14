@@ -9,7 +9,7 @@ bool is_valid_input(char *str)
 {
 	int i = 0;
 
-	if (strlen(str) <= 0)
+	if (!str || strlen(str) <= 0)
 		return (false);
 	if (str[0] != '-' && !isdigit(str[0]))
 		return (false);

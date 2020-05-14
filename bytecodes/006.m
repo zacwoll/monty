@@ -1,3 +1,3 @@
-# push with a character?
+# push with 2 spaces before number
 push 1
-push holbi
+       push                 2002                                                                      
