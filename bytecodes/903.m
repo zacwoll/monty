@@ -1,2 +1,2 @@
-# mul fails, no stack
-mul
+# mod fails, no stack
+mod

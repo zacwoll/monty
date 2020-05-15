@@ -1,4 +1,4 @@
-# push with a bunch of whitespace
+# push with no args
 push 1
 push     2
 pall

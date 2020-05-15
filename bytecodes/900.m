@@ -1,4 +1,4 @@
-# mul works in usual context
+# mod works in usual context
 push 1
 push 3
 push 2
